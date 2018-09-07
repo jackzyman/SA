@@ -44,4 +44,12 @@ public class HomeController {
         stage.show();
     }
 
+    public void addMedicineOnAction(ActionEvent event) throws IOException{
+        Button button = (Button) event.getSource();
+        Stage stage = (Stage) button.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AddMedicineController.fxml"));
+        stage.setScene(new Scene(loader.load()));
+        stage.show();
+    }
+
 }
