@@ -49,6 +49,8 @@ public class HomeController {
         Stage stage = (Stage) button.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/AddMedicineController.fxml"));
         stage.setScene(new Scene(loader.load()));
+        AddMedicineController addMedicineController = loader.getController();
+        addMedicineController.setUser(account);
         stage.show();
     }
 

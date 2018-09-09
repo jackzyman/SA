@@ -11,6 +11,9 @@ import java.io.IOException;
 
 public class AddMedicineController {
     private Account account;
+    public void setUser(Account account) {
+        this.account = account;
+    }
 
     public void backToHomeOnAction(ActionEvent event) throws IOException {
         Button button = (Button) event.getSource();
