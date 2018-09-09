@@ -17,13 +17,22 @@ public class Main extends Application {
 
         Scene scene = new Scene(root);
 
-        scene.setFill(Color.TRANSPARENT);
+        scene.setFill(Color.DARKGRAY);
+
+//        stage.setScene(new Scene(root, 800, 600));
 
         stage.setScene(scene);
 
-        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.initStyle(StageStyle.DECORATED);
+
 
         stage.show();
+
+//        Parent root = FXMLLoader.load(getClass().getResource("/LoginView.fxml"));
+//        primaryStage.setTitle("The Water");
+//        primaryStage.setScene(new Scene(root, 1080, 600));
+//        primaryStage.setResizable(false);
+//        primaryStage.show();
     }
 
 
