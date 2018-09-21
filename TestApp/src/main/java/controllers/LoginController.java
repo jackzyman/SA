@@ -2,6 +2,7 @@ package controllers;
 
 import databases.AccountsDBConnect;
 import databases.DbConnect;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -24,6 +25,14 @@ public class LoginController {
     @FXML private TextField user;
     @FXML private PasswordField pass;
     @FXML private Label label;
+
+    public void registerOnAction(ActionEvent event) throws IOException {
+        Button button = (Button) event.getSource();
+        Stage stage = (Stage) button.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/RegisterController.fxml"));
+        stage.setScene(new Scene(loader.load()));
+        stage.show();
+    }
 
     @FXML
     void login(MouseEvent event) throws SQLException, IOException {
@@ -57,6 +66,7 @@ public class LoginController {
         }else{
             label.setText("wrong");
         }
+
 
 
     }

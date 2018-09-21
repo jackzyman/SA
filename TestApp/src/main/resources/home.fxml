@@ -17,6 +17,9 @@
          <image>
             <Image url="@tama_by_yellow_jelly-d75h61q.png.jpeg" />
          </image></ImageView>
+      <Button layoutX="77.0" layoutY="154.0" mnemonicParsing="false" onAction="#inventoryOnAction" text="Inventory" />
+      <Button layoutX="77.0" layoutY="201.0" mnemonicParsing="false" onAction="#saleProductOnAction" text="SaleProduct" />
+      <Button layoutX="77.0" layoutY="251.0" mnemonicParsing="false" onAction="#saleHistoryOnAction" text="SaleHistory" />
 
    </children>
 </Pane>
