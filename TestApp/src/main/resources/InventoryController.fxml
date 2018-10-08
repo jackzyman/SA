@@ -15,13 +15,14 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TableView layoutX="49.0" layoutY="63.0" prefHeight="197.0" prefWidth="496.0">
+      <TableView layoutX="17.0" layoutY="64.0" prefHeight="197.0" prefWidth="567.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
           <TableColumn prefWidth="127.0" text="name" />
             <TableColumn prefWidth="73.0" text="quantity" />
             <TableColumn prefWidth="92.0" text="price" />
             <TableColumn prefWidth="128.0" text="data of expiry" />
+            <TableColumn prefWidth="75.0" text="type" />
         </columns>
       </TableView>
       <TextField layoutX="256.0" layoutY="281.0" />
